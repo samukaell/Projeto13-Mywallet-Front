@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const postCadastro = async (objeto) =>{
-    const URL = 'http://localhost:5000/cadastro';
+    const URL = 'https://projeto130mywallet.herokuapp.com/cadastro';
     
     try {
         const resposta = await axios.post(URL,objeto);
@@ -17,7 +17,7 @@ export const postCadastro = async (objeto) =>{
 }
 
 export const postLogin = async (objeto) =>{
-    const URL = 'http://localhost:5000/login';
+    const URL = 'https://projeto130mywallet.herokuapp.com/login';
     
     try {
         const resposta = await axios.post(URL,objeto);
@@ -33,8 +33,8 @@ export const postLogin = async (objeto) =>{
 }
 
 export const getTransacoes = async (token) =>{
-    const URLSAIDA = 'http://localhost:5000/saida';
-    const URLENTRADA = 'http://localhost:5000/entrada';
+    const URLSAIDA = 'https://projeto130mywallet.herokuapp.com/saida';
+    const URLENTRADA = 'https://projeto130mywallet.herokuapp.com/entrada';
     const config = {
         headers: {
             "Authorization": `Bearer ${token}`
@@ -61,7 +61,7 @@ export const getTransacoes = async (token) =>{
 }
 
 export const postTransacao = async (objeto,token) =>{
-    const URL = 'http://localhost:5000/inserir';
+    const URL = 'https://projeto130mywallet.herokuapp.com/inserir';
 
     const config = {
         headers: {
@@ -84,7 +84,7 @@ export const postTransacao = async (objeto,token) =>{
 }
 
 export const postDeslogar = async (token) =>{
-    const URL = 'http://localhost:5000/deslogar';
+    const URL = 'https://projeto130mywallet.herokuapp.com/deslogar';
 
     const config = {
         headers: {

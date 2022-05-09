@@ -28,7 +28,7 @@ export default function Main(){
 
         if(retorno !== null){
             setHabilitarCad(!habilitarCad);
-            navigate('/');
+            navigate('/login');
         }else{
             alert("Por favor preencha os campos novamente.");
         }
